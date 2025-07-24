@@ -51,3 +51,26 @@ Next Phase: Data Import and Basic Exploration
 - Sample kidney data generation  
 
 Next Phase: Data Exploration (a02_data_exploration.py)
+
+## Phase 3: Data Exploration Complete
+
+✅ Added a02_data_exploration.py  
+- Missing value analysis  
+- Data type inspection  
+- Statistical summaries  
+
+Next Phase: Data Indexing (a03_data_indexing.py)
+
+## Phase 4: Data Cleaning Complete
+
+✅ Added `a04_data_cleaning.py`  
+- Handled missing values in clinical metrics (age, bp, sg)  
+- Removed duplicate patient records  
+- Fixed data types (e.g., converted `classification` to categorical)  
+- Saved cleaned data to `data/processed/cleaned_kidney.csv`  
+
+**Kidney-Specific Notes**:  
+- Used median imputation for vitals (robust to outliers in medical data)  
+- Preserved nulls in `classification` for realistic ML testing  
+
+Next Phase: Data Transformation (`a05_transformation.py`)  
