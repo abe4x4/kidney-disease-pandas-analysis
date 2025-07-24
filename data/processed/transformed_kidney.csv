@@ -1,0 +1,6 @@
+age,bp,sg,classification,ckd_risk_age,bp_zscore
+45.0,110.0,1.02,ckd,Moderate Risk,1.5506596836654567
+53.0,85.0,1.01,ckd,High Risk,-0.13483997249264842
+48.0,80.0,1.02,ckd,High Risk,-0.47193990372426947
+58.0,70.0,1.0150000000000001,notckd,High Risk,-1.1461397661875115
+62.0,90.0,1.01,ckd,Critical Risk,0.20225995873897262

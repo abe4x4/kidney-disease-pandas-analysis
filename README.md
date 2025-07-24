@@ -74,3 +74,16 @@ Next Phase: Data Indexing (a03_data_indexing.py)
 - Preserved nulls in `classification` for realistic ML testing  
 
 Next Phase: Data Transformation (`a05_transformation.py`)  
+
+## Phase 5: Data Transformation Complete
+
+✅ Added `a05_transformation.py`  
+- Created age groups (`<30`, `30-45`, `46-60`, `60+`)  
+- Normalized blood pressure (z-score)  
+- Added sorted indexes for clinical prioritization  
+
+**Kidney-Specific Notes**:  
+- Age bins align with CKD risk categories  
+- Normalization enables cross-feature comparison  
+
+Next Phase: GroupBy Analysis (`a06_groupby.py`)  
