@@ -1,0 +1,16 @@
+=== Exploration Report ===
+Shape: (5, 4)
+
+Missing Values:
+age               1
+bp                1
+sg                1
+classification    1
+dtype: int64
+
+Data Types:
+age               float64
+bp                float64
+sg                float64
+classification     object
+dtype: object
