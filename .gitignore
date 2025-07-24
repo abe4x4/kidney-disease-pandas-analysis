@@ -1,0 +1,10 @@
+# Python bytecode files
+# Ignore Python bytecode files and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
