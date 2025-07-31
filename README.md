@@ -245,4 +245,19 @@ Next Phase: Error Handling (`a16_errors.py`)
 - Robust error handling is crucial when working with real-world medical data, which can be messy and unpredictable.  
 - Understanding and preventing common pandas warnings ensures data integrity and prevents subtle bugs that could affect analysis results.  
 
-Next Phase: Integration with Other Libraries (`a17_integration.py`)  
+Next Phase: Integration with Other Libraries (`a17_integration.py`)
+
+## Phase 17: Integration with Other Libraries Complete
+
+✅ Added `a17_integration.py`  
+- Showed how to convert a pandas DataFrame to a NumPy array for use in numerical computing libraries.  
+- Demonstrated the seamless integration of pandas with Scikit-learn for a machine learning workflow, including:  
+  - Splitting data into training and testing sets.  
+  - Training a `RandomForestClassifier`.  
+  - Evaluating the model's accuracy.  
+
+**Kidney-Specific Notes**:  
+- The ability to easily pass data between pandas, NumPy, and Scikit-learn is fundamental to building predictive models for clinical outcomes.  
+- This final step brings together all the previous data preparation and analysis stages, culminating in a functional machine learning model that can predict kidney disease classification.  
+
+**Project Complete**  
