@@ -146,4 +146,19 @@ Next Phase: Time Series Analysis (`a09_timeseries.py`)
 - Resampling data by month or quarter can help hospital administrators track patient admission rates and allocate resources more effectively.  
 - Shifting data allows for direct period-over-period comparisons, which is essential for evaluating patient response to treatment.  
 
-Next Phase: Advanced Pandas Features (`a10_advanced.py`)  
+Next Phase: Advanced Pandas Features (`a10_advanced.py`)
+
+## Phase 10: Advanced Pandas Features Complete
+
+✅ Added `a10_advanced.py`  
+- Utilized **categorical data types** to improve memory efficiency and enable logical sorting of `age_group` and `classification`.  
+- Implemented **multi-level indexing** on `city` and `age_group` to demonstrate hierarchical data access and more complex querying.  
+- Used the **`pipe`** method to create a clean, chainable data processing workflow for calculating a new clinical ratio.  
+- Demonstrated the **`explode`** function to transform a list-like column (e.g., medications) into separate rows for more granular analysis.  
+
+**Kidney-Specific Notes**:  
+- Multi-level indexing is highly effective for analyzing nested data structures, such as patients within specific regions and age brackets.  
+- The `pipe` function promotes reproducible and readable code, which is essential for clinical data analysis where transparency and validation are key.  
+- Exploding a `medications` column would allow analysts to easily count the frequency of each medication or study the relationship between specific drugs and patient outcomes.  
+
+Next Phase: Data Visualization (`a11_visualization.py`)  
