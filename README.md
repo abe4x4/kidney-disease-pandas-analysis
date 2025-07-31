@@ -161,4 +161,37 @@ Next Phase: Advanced Pandas Features (`a10_advanced.py`)
 - The `pipe` function promotes reproducible and readable code, which is essential for clinical data analysis where transparency and validation are key.  
 - Exploding a `medications` column would allow analysts to easily count the frequency of each medication or study the relationship between specific drugs and patient outcomes.  
 
-Next Phase: Data Visualization (`a11_visualization.py`)  
+Next Phase: Data Visualization (`a11_visualization.py`)
+
+## Phase 11: Data Visualization Complete
+
+✅ Added `a11_visualization.py` using Matplotlib and Seaborn.  
+- Generated and saved the following plots to `reports/visualizations/`:  
+  - **Histogram** of patient age distribution.  
+  - **Bar chart** showing the count of patients with and without CKD.  
+  - **Box plot** comparing blood pressure distributions between classifications.  
+  - **Scatter plot** to visualize the relationship between serum creatinine and blood glucose.  
+  - **Correlation heatmap** to show the relationships between all numeric clinical metrics.  
+
+**Kidney-Specific Notes**:  
+- The box plot of blood pressure clearly illustrates that patients with CKD tend to have higher and more variable blood pressure.  
+- The scatter plot helps in identifying patients with concurrent high blood glucose and high serum creatinine, who may be at the highest risk.  
+- The heatmap provides a comprehensive overview of which clinical indicators are correlated, guiding further investigation and feature selection for machine learning models.  
+
+Next Phase: Machine Learning Preparation (`a12_ml_prep.py`)
+
+## Phase 12: Machine Learning Preparation Complete
+
+✅ Added `a12_ml_prep.py`  
+- Separated features (X) and target (y).  
+- Identified and processed categorical and numerical features separately.  
+- Applied **one-hot encoding** to categorical features to convert them into a machine-readable format.  
+- Used **StandardScaler** to normalize the numerical features, ensuring that all variables have a similar scale.  
+- Created a `ColumnTransformer` to apply the correct preprocessing to each feature type.  
+- Saved the fully preprocessed data, ready for model training.  
+
+**Kidney-Specific Notes**:  
+- Proper feature scaling is crucial in medical datasets where clinical metrics can have vastly different units and ranges (e.g., age vs. serum creatinine).  
+- One-hot encoding is necessary for nominal categorical data like `city` or `gender` so that machine learning algorithms can interpret them correctly.  
+
+Next Phase: Performance Analysis (`a13_performance.py`)  
