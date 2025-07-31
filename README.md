@@ -219,4 +219,17 @@ Next Phase: Advanced Patterns (`a14_patterns.py`)
 - Method chaining is an excellent pattern for building reproducible analysis workflows in clinical research, as it clearly documents each transformation step.  
 - The `.str` and `.dt` accessors are highly efficient for feature engineering, allowing for the creation of new variables from existing text or date columns without resorting to slow loops or `.apply()`.  
 
-Next Phase: Case Studies (`a15_case_studies.py`)  
+Next Phase: Case Studies (`a15_case_studies.py`)
+
+## Phase 15: Case Studies Complete
+
+✅ Added `a15_case_studies.py`  
+- **Case Study 1**: Identified a high-risk patient segment by filtering for individuals with CKD, high blood pressure, and high blood glucose.  
+- **Case Study 2**: Analyzed the clinical characteristics of younger patients (under 40) with CKD to understand early-onset patterns.  
+- **Case Study 3**: Investigated cases where patients were diagnosed with CKD despite having normal blood pressure and blood sugar, focusing on other indicators like hemoglobin and red blood cell count.  
+
+**Kidney-Specific Notes**:  
+- These case studies demonstrate how pandas can be used to answer specific clinical questions and identify patient subgroups that may require targeted interventions.  
+- By combining multiple conditions, clinicians and researchers can uncover complex patterns that would be missed by looking at single variables alone.  
+
+Next Phase: Error Handling (`a16_errors.py`)  
