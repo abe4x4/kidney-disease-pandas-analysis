@@ -206,4 +206,17 @@ Next Phase: Performance Analysis (`a13_performance.py`)
 - In clinical data analysis, where datasets can be large and computations are frequent, optimizing performance is critical. Vectorization should be preferred over `.apply()` wherever possible.  
 - Choosing the right file format like Parquet can lead to faster data loading and reduced memory usage, which is beneficial when working with extensive patient records.  
 
-Next Phase: Advanced Patterns (`a14_patterns.py`)  
+Next Phase: Advanced Patterns (`a14_patterns.py`)
+
+## Phase 14: Advanced Patterns Complete
+
+✅ Added `a14_patterns.py`  
+- Implemented **method chaining** with `.assign()` and `.query()` to create a clean, readable, and efficient data processing pipeline.  
+- Utilized the **`.str` accessor** to perform vectorized string operations, such as converting the `classification` column to uppercase.  
+- Used the **`.dt` accessor** to extract datetime properties (e.g., day of the week) from the `record_date` column.  
+
+**Kidney-Specific Notes**:  
+- Method chaining is an excellent pattern for building reproducible analysis workflows in clinical research, as it clearly documents each transformation step.  
+- The `.str` and `.dt` accessors are highly efficient for feature engineering, allowing for the creation of new variables from existing text or date columns without resorting to slow loops or `.apply()`.  
+
+Next Phase: Case Studies (`a15_case_studies.py`)  
