@@ -232,4 +232,17 @@ Next Phase: Case Studies (`a15_case_studies.py`)
 - These case studies demonstrate how pandas can be used to answer specific clinical questions and identify patient subgroups that may require targeted interventions.  
 - By combining multiple conditions, clinicians and researchers can uncover complex patterns that would be missed by looking at single variables alone.  
 
-Next Phase: Error Handling (`a16_errors.py`)  
+Next Phase: Error Handling (`a16_errors.py`)
+
+## Phase 16: Error Handling Complete
+
+✅ Added `a16_errors.py`  
+- Demonstrated how to catch a `KeyError` when accessing a non-existent column.  
+- Explained the `SettingWithCopyWarning` and showed how to avoid it by using `.copy()` when modifying a slice of a DataFrame.  
+- Illustrated how to prevent a `DtypeWarning` by explicitly specifying column data types during CSV import.  
+
+**Kidney-Specific Notes**:  
+- Robust error handling is crucial when working with real-world medical data, which can be messy and unpredictable.  
+- Understanding and preventing common pandas warnings ensures data integrity and prevents subtle bugs that could affect analysis results.  
+
+Next Phase: Integration with Other Libraries (`a17_integration.py`)  
