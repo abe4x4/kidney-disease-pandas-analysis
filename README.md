@@ -87,3 +87,18 @@ Next Phase: Data Transformation (`a05_transformation.py`)
 - Normalization enables cross-feature comparison  
 
 Next Phase: GroupBy Analysis (`a06_groupby.py`)  
+
+## Phase 6: GroupBy Analysis Complete
+
+✅ Added `a06_groupby.py`  
+- Calculated average blood pressure by age group  
+- Counted patients by classification within each age group  
+- Aggregated multiple metrics (mean, std) for `bgr` and `sc`  
+- Applied a custom function to find the glucose range  
+- Filtered groups based on a condition (high blood pressure)  
+
+**Kidney-Specific Notes**:  
+- Grouping by `age_group` and `classification` reveals how different clinical metrics vary across patient segments.  
+- This analysis helps identify high-risk groups, such as older patients with high blood pressure or specific blood glucose patterns.  
+
+Next Phase: Merging DataFrames (`a07_merging.py`)  
