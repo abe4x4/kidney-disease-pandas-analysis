@@ -101,4 +101,19 @@ Next Phase: GroupBy Analysis (`a06_groupby.py`)
 - Grouping by `age_group` and `classification` reveals how different clinical metrics vary across patient segments.  
 - This analysis helps identify high-risk groups, such as older patients with high blood pressure or specific blood glucose patterns.  
 
-Next Phase: Merging DataFrames (`a07_merging.py`)  
+Next Phase: Merging DataFrames (`a07_merging.py`)
+
+## Phase 7: Merging DataFrames Complete
+
+✅ Added `a07_merging.py`  
+- Created dummy datasets for demographics and lab results to simulate real-world data integration.  
+- Performed an **inner join** to combine core kidney data with patient demographics.  
+- Used a **left join** to add supplementary lab results, preserving all original patient records.  
+- Demonstrated an **outer join** to combine patient lists, ensuring no records were dropped.  
+- Saved the primary merged data to `data/processed/merged_kidney_data.csv`.  
+
+**Kidney-Specific Notes**:  
+- Merging is crucial for building a holistic patient view. For instance, combining clinical data with demographics (`city`, `gender`) can help identify geographical or gender-based trends in kidney disease.  
+- The use of a **left join** for lab results is standard practice to avoid losing patient records from the primary cohort, even if some test results are missing.  
+
+Next Phase: Pivot Tables (`a08_pivots.py`)  
