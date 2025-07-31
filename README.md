@@ -194,4 +194,16 @@ Next Phase: Machine Learning Preparation (`a12_ml_prep.py`)
 - Proper feature scaling is crucial in medical datasets where clinical metrics can have vastly different units and ranges (e.g., age vs. serum creatinine).  
 - One-hot encoding is necessary for nominal categorical data like `city` or `gender` so that machine learning algorithms can interpret them correctly.  
 
-Next Phase: Performance Analysis (`a13_performance.py`)  
+Next Phase: Performance Analysis (`a13_performance.py`)
+
+## Phase 13: Performance Analysis Complete
+
+✅ Added `a13_performance.py`  
+- Compared the performance of `.apply()` with vectorized operations, demonstrating that vectorized approaches are significantly faster for simple conditional logic.  
+- Measured the time taken to write and read data in both CSV and Parquet formats, highlighting the efficiency of Parquet for I/O operations.  
+
+**Kidney-Specific Notes**:  
+- In clinical data analysis, where datasets can be large and computations are frequent, optimizing performance is critical. Vectorization should be preferred over `.apply()` wherever possible.  
+- Choosing the right file format like Parquet can lead to faster data loading and reduced memory usage, which is beneficial when working with extensive patient records.  
+
+Next Phase: Advanced Patterns (`a14_patterns.py`)  
