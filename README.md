@@ -116,4 +116,18 @@ Next Phase: Merging DataFrames (`a07_merging.py`)
 - Merging is crucial for building a holistic patient view. For instance, combining clinical data with demographics (`city`, `gender`) can help identify geographical or gender-based trends in kidney disease.  
 - The use of a **left join** for lab results is standard practice to avoid losing patient records from the primary cohort, even if some test results are missing.  
 
-Next Phase: Pivot Tables (`a08_pivots.py`)  
+Next Phase: Pivot Tables (`a08_pivots.py`)
+
+## Phase 8: Pivot Tables Complete
+
+✅ Added `a08_pivots.py`  
+- Created a basic pivot table to show the average blood pressure, cross-referenced by `age_group` and `classification`.  
+- Built an advanced pivot table with multiple aggregation functions (`mean`, `max`) for different clinical metrics (`bgr`, `sc`).  
+- Demonstrated the use of `margins` to add row and column totals for a quick overview of patient counts.  
+- Saved the resulting pivot tables to a log file for further analysis.  
+
+**Kidney-Specific Notes**:  
+- Pivot tables are excellent for summarizing the relationships between different categorical variables. For example, the first pivot table quickly highlights if a certain age group with CKD (`ckd`) has a notably higher average blood pressure.  
+- The advanced pivot table helps in identifying complex patterns, such as whether patients in a particular `city` and `age_group` with `ckd` have dangerously high blood glucose (`bgr`) and serum creatinine (`sc`) levels.  
+
+Next Phase: Time Series Analysis (`a09_timeseries.py`)  
