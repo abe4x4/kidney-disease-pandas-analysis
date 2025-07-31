@@ -130,4 +130,20 @@ Next Phase: Pivot Tables (`a08_pivots.py`)
 - Pivot tables are excellent for summarizing the relationships between different categorical variables. For example, the first pivot table quickly highlights if a certain age group with CKD (`ckd`) has a notably higher average blood pressure.  
 - The advanced pivot table helps in identifying complex patterns, such as whether patients in a particular `city` and `age_group` with `ckd` have dangerously high blood glucose (`bgr`) and serum creatinine (`sc`) levels.  
 
-Next Phase: Time Series Analysis (`a09_timeseries.py`)  
+Next Phase: Time Series Analysis (`a09_timeseries.py`)
+
+## Phase 9: Time Series Analysis Complete
+
+✅ Added `a09_timeseries.py`  
+- Synthesized a `record_date` column to simulate a real-world time series dataset.  
+- Set the date column as the DataFrame index to enable time-based operations.  
+- **Resampled** the data to a monthly frequency to aggregate patient counts and average blood pressure.  
+- Calculated a 30-day **rolling average** for serum creatinine to smooth out noise and identify trends.  
+- Used the **shift** method to compare current blood glucose levels with previous records, highlighting changes over time.  
+
+**Kidney-Specific Notes**:  
+- Time series analysis is critical for monitoring disease progression and treatment efficacy. For example, a rising rolling average of serum creatinine could indicate worsening kidney function.  
+- Resampling data by month or quarter can help hospital administrators track patient admission rates and allocate resources more effectively.  
+- Shifting data allows for direct period-over-period comparisons, which is essential for evaluating patient response to treatment.  
+
+Next Phase: Advanced Pandas Features (`a10_advanced.py`)  
